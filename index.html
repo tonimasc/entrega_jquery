@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>GitHub Example</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <h1 style="font-family: Arial"><em>ENTREGA JQUERY</em></h1>
+    <!--mostrar repositorio (GET)-->
+    <div class="row">
+      <h3 style="font-family: Arial" class="color1 panel-title">REPOSITORIOS</h3>
+      <span id="repos_result"></span> 
+      <button type="button" class="btn btn-info"
+        id="button_get_repos">Obtener</button> 
+    </div>
+    <!--obtener información (GET)-->
+    <div class="row">
+      <h3 style="font-family: Arial" class="panel-title">Información del repositorio</h3>
+      <span id="get_repo_result"></span> 
+      <button type="button" class="btn btn-info"
+        id="button_get_repo">Mostrar</button> 
+      <input class="form-control" id="repository_name" type="text"> 
+    </div>
+    <!--Crea el repositorio (POST)-->
+    <div class="row">
+      <h3 style="font-family: Arial" class="panel-title">Creacion de un repositorio</h3>
+      <span class="input-group-addon">Name</span> <input class="form-control" id="repository_name_to_create"
+        type="text"> <span class="input-group-addon">Description</span> <input
+        class="form-control" id="description_to_create" type="text"> <span id="create_result"></span>
+      <button type="button" class="btn btn-info" id="button_to_create">Crear</button> 
+    </div>
+    <!--Actualizar repositorio (PATCH;POST)-->
+    <div class="row">
+      <h3  style="font-family: Arial " class="panel-title">Actualizar y Editar</h3>
+      <span class="input-group-addon">Name</span> <input class="form-control" id="repository_name_to_edit"
+        type="textbox"> <span class="input-group-addon">Description</span> <input
+        class="form-control" id="description_to_edit" type="textbox"> <span id="update_result"></span>
+      <button type="button" class="btn btn-info" id="button_get_repo_to_edit">Editar</button> <span class="input-group-addon">Name</span> <input
+        class="form-control" id="repository_name_get_to_edit" type="text"> <button
+        type="button" class="btn btn-info" id="button_edit_repo">Guardar</button>
+    </div>
+    <!--Eliminar repositorio DELETE-->
+     <h3 style="font-family: Arial" class="color2 panel-title">Eliminar Repositorio</h3>
+      <span id="delete_repo"></span> 
+      <button type="button" class="btn btn-info"
+        id="button_delete_repo">Eliminar</button> 
+      <input class="form-control" id="repository_name_to_delete" type="text"> 
+    </div>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Event and AJAX functions -->
+    <script type="text/javascript" src="entrega.js"></script>
+    <script src="weblinking.js"></script>
+  </body>
+</html>
